@@ -237,6 +237,9 @@ nav.site-nav .container {
 }
 .project-card:hover { border-color: var(--accent-bd); box-shadow: 0 4px 16px rgba(23,33,58,0.06); }
 .project-card.featured { grid-column: 1 / -1; border-left: 4px solid var(--accent); }
+.project-card.pi { border-left: 4px solid var(--accent); }
+.project-card.minor { background: transparent; }
+.project-card.minor h4 { font-size: 1rem; }
 .project-card h4 {
   font-family: var(--serif);
   font-size: 1.08rem; font-weight: 500;
