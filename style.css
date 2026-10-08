@@ -318,6 +318,26 @@ nav.site-nav .container {
 
 .pub-note { font-size: 0.85rem; color: var(--muted); margin: -0.25rem 0 1rem; }
 
+/* ── Op-eds page ────────────────────────────────────────────── */
+.page-title {
+  font-family: var(--serif);
+  font-size: 2.5rem; font-weight: 500; line-height: 1.12; letter-spacing: -0.015em;
+  color: var(--ink); margin-bottom: 1rem;
+}
+.oped-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+.oped-filter {
+  font: inherit; font-size: 0.8rem; font-weight: 500;
+  padding: 0.35rem 0.85rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--accent-bd); background: var(--paper); color: var(--accent-ink);
+}
+.oped-filter span { color: var(--muted); font-variant-numeric: tabular-nums; margin-left: 0.2rem; }
+.oped-filter:hover { border-color: var(--accent); }
+.oped-filter.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.oped-filter.active span { color: rgba(255,255,255,0.8); }
+.oped-list .pub-venue { display: block; font-size: 0.8rem; }
+.oped-summary { font-size: 0.86rem; color: var(--text); margin-top: 0.15rem; }
+[hidden] { display: none !important; }
+
 .plain-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
 .plain-list li { font-size: 0.9rem; line-height: 1.6; padding-left: 1rem; border-left: 2px solid var(--rule); }
 .plain-list li:hover { border-left-color: var(--accent); }
@@ -485,7 +505,7 @@ footer a:hover { color: #fff; }
   .cv-year { width: auto; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-photo { max-width: 420px; }
-  .erc-hero h1 { font-size: 1.9rem; }
+  .erc-hero h1, .page-title { font-size: 1.9rem; }
   .timeline li { grid-template-columns: 1fr; gap: 0.1rem; }
 }
 
