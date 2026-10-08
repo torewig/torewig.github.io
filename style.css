@@ -313,6 +313,8 @@ nav.site-nav .container {
 .chip.award { border-color: #e6cfa0; background: #fbf5e8; color: #7a5a1c; }
 .chip.award:hover { background: #7a5a1c; border-color: #7a5a1c; color: #fff; }
 
+.pub-note { font-size: 0.85rem; color: var(--muted); margin: -0.25rem 0 1rem; }
+
 .plain-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
 .plain-list li { font-size: 0.9rem; line-height: 1.6; padding-left: 1rem; border-left: 2px solid var(--rule); }
 .plain-list li:hover { border-left-color: var(--accent); }
