@@ -281,6 +281,16 @@ nav.site-nav .container {
 }
 .pub-tools .pill { font-size: 0.76rem; padding: 0.3rem 0.75rem; }
 
+.pub-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-bottom: 0.6rem; }
+.pub-stat {
+  background: var(--paper); border: 1px solid var(--rule); border-radius: var(--radius);
+  padding: 0.9rem 1.1rem; display: flex; flex-direction: column; gap: 0.15rem;
+}
+.pub-stat .num { font-family: var(--serif); font-size: 2rem; font-weight: 500; color: var(--ink); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.pub-stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.pub-stats-note { font-size: 0.78rem; color: var(--muted); margin-bottom: 1.5rem; }
+@media (max-width: 520px) { .pub-stats { grid-template-columns: 1fr; } }
+
 .pub-year-group { display: grid; grid-template-columns: 90px 1fr; gap: 0 1.5rem; margin-bottom: 1.75rem; }
 .pub-year {
   font-family: var(--serif);
